@@ -1,0 +1,11 @@
+Changes
+MANIFEST			This list of files
+Makefile.PL
+README
+SIGNATURE
+lib/Convert/CharMap.pm
+lib/Convert/CharMap/CharMapML.pm
+lib/Convert/CharMap/UCM.pm
+lib/Convert/CharMap/YAML.pm
+t/0-signature.t
+t/1-basic.t

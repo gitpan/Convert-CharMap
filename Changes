@@ -1,0 +1,20 @@
+____________________________________________________________________________
+[  3880] By: autrijus                              on 2003/01/26  16:02:46
+        Log: * first public release.
+	   ! Makefile.PL README lib/Convert/CharMap.pm
+____________________________________________________________________________
+[  3878] By: autrijus                              on 2003/01/26  16:01:56
+        Log: * version 0.01 of Convert::CharMap.
+	   + lib/Convert/CharMap/CharMapML.pm
+	   + lib/Convert/CharMap/UCM.pm
+	   + lib/Convert/CharMap/YAML.pm
+	  +> t/0-signature.t
+____________________________________________________________________________
+[   931] By: autrijus                              on 2002/09/19  01:05:59
+        Log: * signature and changelog.
+	   + Changes SIGNATURE
+____________________________________________________________________________
+[   929] By: autrijus                              on 2002/09/19  01:03:39
+        Log: * initial submit.
+	   + MANIFEST Makefile.PL README
+	   + lib/Convert/CharMap.pm t/1-basic.t

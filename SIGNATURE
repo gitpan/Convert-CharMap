@@ -1,0 +1,33 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.21.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 02072a5df1f166b228415f082f580b3f05df75fe Changes
+SHA1 cadf7beedbc9b9b9a1209aaf770b66c013318c4b MANIFEST
+SHA1 76a520d92a9ff99bb7a2e0521501b533e1e96862 Makefile.PL
+SHA1 b75689479b1d350f7d7c01b7e5eebb063b5b7962 README
+SHA1 b6e81ac1546c58090fbe73109eeea863b28b0d1b lib/Convert/CharMap.pm
+SHA1 896bf99ee293dfa76474b11f56feaf1d661f6e24 lib/Convert/CharMap/CharMapML.pm
+SHA1 296ee7f5432fbb2d69f2f86fb5e70a3bb9dd2534 lib/Convert/CharMap/UCM.pm
+SHA1 00a7099af57d20dc7f7c7402a7e03fcba4519c2c lib/Convert/CharMap/YAML.pm
+SHA1 a7c46a9306eafc0ded526a0d559252fc5c3c0917 t/0-signature.t
+SHA1 964f01bfc097dacc1b5bba0e978fed5a2c0b2b3d t/1-basic.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.1 (FreeBSD)
+
+iD8DBQE+NAhXtLPdNzw1AaARAmYiAJ4yA7d2bvFQOAftFZpIZi7+EOxZrwCcD16+
+NBZguZYznhoVa1Be9wQYOjc=
+=JrK6
+-----END PGP SIGNATURE-----
