@@ -1,28 +1,20 @@
 #!/usr/bin/perl
-# $File: //member/autrijus/Convert-Session-BerkeleyDB/Makefile.PL $ $Author: autrijus $
-# $Revision: #2 $ $Change: 670 $ $DateTime: 2002/08/16 18:42:29 $
 
-require 5.006;
+use strict;
+use inc::Module::Install;
 
-use ExtUtils::MakeMaker;
+name        'Convert-CharMap';
+all_from    'lib/Convert/CharMap.pm';
 
-WriteMakefile(
-    AUTHOR		=> 'Autrijus Tang (autrijus@autrijus.org)',
-    ABSTRACT		=> 'Conversion between Unicode Character Maps',
-    NAME		=> 'Convert::CharMap',
-    VERSION_FROM	=> 'lib/Convert/CharMap.pm', 
-    DISTNAME		=> 'Convert-CharMap',
-    BINARY_LOCATION	=> 'x86/Convert-Map.tar.gz',
+requires    'charnames';
+requires    'XML::Simple';
 
-    PREREQ_PM		=> {
-	'charnames'	=> 0,
-	'XML::Simple'	=> 0,
-	'YAML'		=> 0,
-    },
+if ( can_cc() ) {
+    requires('YAML::Syck') unless can_use('YAML::XS') or can_use('YAML::Tiny') or can_use('YAML')
+} else {
+    requires('YAML::Tiny') unless can_use('YAML::XS') or can_use('YAML::Syck') or can_use('YAML::Tiny');
+}
 
-    dist		=> {
-        COMPRESS	=> 'gzip -9',
-        SUFFIX		=> '.gz',
-    },
-);
+auto_provides;
 
+sign; WriteAll;

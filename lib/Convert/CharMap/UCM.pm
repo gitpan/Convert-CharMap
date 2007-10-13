@@ -1,12 +1,13 @@
-# $File: //member/autrijus/Convert-CharMap/lib/Convert/CharMap/UCM.pm $ $Author: autrijus $
-# $Revision: #1 $ $Change: 3878 $ $DateTime: 2003/01/26 16:01:56 $
-
 package Convert::CharMap::UCM;
+use 5.006;
+use strict;
+use warnings;
+use charnames ();
 
-use XML::Simple;
+our $VERSION = '0.10';
 
 sub in {
-    # XXX: to be written
+    # XXX: To be written
     die "UCM->in not yet implemented.";
 }
 
@@ -24,8 +25,6 @@ sub out {
 #
 CHARMAP
 .
-
-    require charnames;
 
     my @lines;
     foreach my $set ([a => 0], [fbu => 1], [fub => 3]) {
